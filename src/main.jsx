@@ -6,6 +6,8 @@ import Trade from './pages/Trade'
 import RatesPage from './pages/RatesPage'
 import NotFound from './pages/NotFound'
 import Test from './Test'
+import Dashboard from './pages/Dashboard'
+import Admin from './pages/Admin'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,6 +17,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/trade" element={<Trade />} />
         <Route path="/rates" element={<RatesPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="/test" element={<Test />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
